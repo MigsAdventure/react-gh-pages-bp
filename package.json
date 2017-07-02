@@ -1,12 +1,12 @@
 {
-  "name": "react-router-gh-pages-bp",
+  "name": "react-gh-pages-bp",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://github.com/MigsAdventure/react-gh-pages-bp",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-     "react-router": "3.0.0"
+    "react-router": "3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
@@ -38,6 +38,7 @@
     "jest": "18.1.0",
     "json-loader": "0.5.4",
     "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.0.2",
     "object-assign": "4.1.1",
     "postcss-loader": "1.2.2",
     "promise": "7.1.1",
@@ -50,12 +51,12 @@
     "whatwg-fetch": "2.0.2"
   },
   "scripts": {
-    "deploy": "npm run build&&gh-pages -d build",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "build-css": "node-sass-chokidar src/styles -o src/_styles",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/_styles --watch --recursive",
+    "deploy": "npm run build&&gh-pages -d build",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
