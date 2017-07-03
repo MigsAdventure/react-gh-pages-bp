@@ -2,7 +2,7 @@
   "name": "react-gh-pages-bp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/MigsAdventure/react-gh-pages-bp",
+  "homepage": "",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
@@ -43,6 +43,7 @@
     "postcss-loader": "1.2.2",
     "promise": "7.1.1",
     "react-dev-utils": "^0.5.2",
+    "react-scripts": "^1.0.10",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
     "webpack": "1.14.0",
