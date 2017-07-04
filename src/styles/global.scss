@@ -1,0 +1,20 @@
+@import './vendor/normalize.scss';
+@import './vendor/fonts.scss';
+@import './_partials/_settings.scss';
+@import './_partials/_mixins.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root, #App {
+  // font-family: $Lobster;
+  height: 100%;
+  width: 100%;
+}
+
+// Page defaults
+#Home {
+  height: 100%;
+  width: 100%;
+}

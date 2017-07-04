@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../_styles/global.css';
 
 export default function App (props) {
     return (
-      <div className="App">
+      <div id="App">
         {props.children}
       </div>
     );
