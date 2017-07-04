@@ -5,16 +5,30 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body, #root, #App {
   // font-family: $Lobster;
+  background-color: orange;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
   height: 100%;
   width: 100%;
 }
 
 // Page defaults
-#Home {
+#Home, #About, #NewPage {
   height: 100%;
   width: 100%;
 }
