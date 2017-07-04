@@ -1,7 +1,7 @@
-@import './vendor/normalize.scss';
-@import './vendor/fonts.scss';
-@import './_partials/_settings.scss';
-@import './_partials/_mixins.scss';
+@import './vendor/normalize';
+@import './vendor/fonts';
+@import './_partials/_settings';
+@import './_partials/_mixins';
 
 * {
   box-sizing: border-box;

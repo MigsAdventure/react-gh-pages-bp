@@ -1,3 +1,4 @@
+import '../../_styles/components/global/NavBar.css';
 import React, { Component } from 'react';
 
 export default class  NavBar extends Component {
@@ -24,13 +25,12 @@ export default class  NavBar extends Component {
     'show_nav' : 'hide_nav';
     return (
       <div className={`NavBar`}>
-        <div className="iconContainer">
-          <a className="fb-icon" href="https://www.facebook.com/rainbowjusteam"></a>
-          <a className="instagram-icon" href="https://www.instagram.com/rainbowjuscrew/"></a>
-          <a className="email-icon" href="mailto:rainbowjus.crew@gmail.com"></a>
-        </div>
         <div className={`${nav_visible}`}>
-
+          <ul className="navLinkWrapper">
+            <li className="navLink">Home</li>
+            <li className="navLink">New Page</li>
+            <li className="navLink">About</li>
+          </ul>
         </div>
         <div className="hamburger" onClick={this.NavToggle}>
           {nav_icon}
