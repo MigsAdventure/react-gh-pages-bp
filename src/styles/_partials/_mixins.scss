@@ -1,18 +1,20 @@
+$start-path: '../../../media/images';
 @mixin default-bg-props {
-  $start-path: '../../media/images';
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@mixin global-icon-bg($image) {
+@mixin icon-bg($image, $dir: 'global', $page: '') {
   @include default-bg-props;
-  $start-path: #{$start-path}#{'/global/'};
-  background-image: url(#{$start-path}#{$image});
+  @if ($page) {
+    background-image: url('#{$start-path}/#{$dir}/#{$page}/#{$image}');
+  }
+  background-image: url('#{$start-path}/#{$dir}/#{$image}');
 }
 
-@mixin page-icon-bg($image, $page) {
-  @include default-bg-props;
-  $start-path: #{$start-path}#{'/pages/'}#{$page#{'/'}};
-  background-image: url(#{$start-path}#{$image});
-}
+// @mixin page-icon-bg($image, $page) {
+//   @include default-bg-props;
+//   $start-path: #{$start-path}#{'/pages/'}#{$page#{'/'}};
+//   background-image: url(#{$start-path}#{$image});
+// }
