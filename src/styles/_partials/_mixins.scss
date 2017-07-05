@@ -12,9 +12,3 @@ $start-path: '../../../media/images';
   }
   background-image: url('#{$start-path}/#{$dir}/#{$image}');
 }
-
-// @mixin page-icon-bg($image, $page) {
-//   @include default-bg-props;
-//   $start-path: #{$start-path}#{'/pages/'}#{$page#{'/'}};
-//   background-image: url(#{$start-path}#{$image});
-// }
